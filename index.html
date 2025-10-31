@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I migliori album di sempre</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/logo.png">
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="menu1">
+        <div class="menu1__inner">
+          <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+          </div>
+          
+          <div class="menu">
+            <ul>
+              
+              <li><button id="btn1">
+                <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M11.4919 18.3035C11.4919 19.8962 10.4636 20.4184 9.11011 19.6525L2.29858 15.7534C1.37573 15.2225 1.12085 14.7177 1.12085 13.7168V5.70109C1.12085 4.29115 2.3689 3.9169 3.36206 4.48262L4.89136 5.35295V3.51655C4.89136 2.10661 6.1394 1.72367 7.13257 2.28938L8.45972 3.05528V1.47127C8.45972 0.061334 9.70776 -0.312909 10.7009 0.252807L17.6443 4.23022C18.532 4.73502 18.8396 5.26592 18.8396 6.28421V14.0824C18.8396 15.6751 17.8025 16.1973 16.449 15.4227L15.2625 14.7438V16.119C15.2625 17.7117 14.2341 18.2339 12.8806 17.4593L11.4919 16.6673V18.3035ZM17.0027 13.7778C17.0818 13.8213 17.1433 13.7865 17.1433 13.7081V6.31902C17.1433 5.97959 17.0466 5.86645 16.783 5.70979L10.3054 2.00217C10.2263 1.95866 10.156 2.00217 10.156 2.0805V4.03005L14.0671 6.2668C14.9548 6.7803 15.2625 7.3025 15.2625 8.32079V12.7769L17.0027 13.7778ZM11.4919 10.5053V14.709L13.4343 15.8143C13.5134 15.8579 13.5662 15.8318 13.5662 15.7447V8.3556C13.5662 8.01617 13.4695 7.90303 13.2058 7.74637L6.72827 4.03875C6.64917 3.99523 6.58765 4.03875 6.58765 4.11708V6.32772L10.3054 8.45133C11.1931 8.96483 11.4919 9.49573 11.4919 10.5053ZM9.4353 9.9309L2.96655 6.23199C2.87866 6.17977 2.81714 6.22328 2.81714 6.30161V13.6559C2.81714 13.9692 2.88745 14.1085 3.15991 14.2739L9.66382 18.0076C9.74292 18.0511 9.79565 18.0163 9.79565 17.9293V10.5488C9.79565 10.2007 9.70776 10.0876 9.4353 9.9309Z"></path></svg>
+              </button></li>
+              <li><button id="btn2">
+                <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.37397 5.74794C2.13836 5.74794 2.74794 5.13836 2.74794 4.37397C2.74794 3.61925 2.13836 3 1.37397 3C0.619255 3 0 3.61925 0 4.37397C0 5.13836 0.619255 5.74794 1.37397 5.74794ZM5.92163 5.30285H19.0614C19.5839 5.30285 20 4.89647 20 4.37397C20 3.85148 19.5936 3.44509 19.0614 3.44509H5.92163C5.4088 3.44509 4.99274 3.85148 4.99274 4.37397C4.99274 4.89647 5.39913 5.30285 5.92163 5.30285ZM1.37397 11.6986C2.13836 11.6986 2.74794 11.089 2.74794 10.3246C2.74794 9.56991 2.13836 8.95065 1.37397 8.95065C0.619255 8.95065 0 9.56991 0 10.3246C0 11.089 0.619255 11.6986 1.37397 11.6986ZM5.92163 11.2535H19.0614C19.5839 11.2535 20 10.8471 20 10.3246C20 9.80213 19.5936 9.39574 19.0614 9.39574H5.92163C5.4088 9.39574 4.99274 9.80213 4.99274 10.3246C4.99274 10.8471 5.39913 11.2535 5.92163 11.2535ZM1.37397 17.6493C2.13836 17.6493 2.74794 17.0397 2.74794 16.2753C2.74794 15.5206 2.13836 14.9013 1.37397 14.9013C0.619255 14.9013 0 15.5206 0 16.2753C0 17.0397 0.619255 17.6493 1.37397 17.6493ZM5.92163 17.2042H19.0614C19.5839 17.2042 20 16.7978 20 16.2753C20 15.7528 19.5936 15.3464 19.0614 15.3464H5.92163C5.4088 15.3464 4.99274 15.7528 4.99274 16.2753C4.99274 16.7978 5.39913 17.2042 5.92163 17.2042Z"></path>
+                </svg>
+              </button></li>
+              
+            </ul>
+          </div>
+        </div>
+      
+      <div class="blur"></div>
+    </div>
+    </header>
+    
+    
+    
+    <div class="vetrina">
+      <div class="scroll-container" data-speed="70" data-direction="ltr">
+        <div class="wrapper">
+          <div class="box__inner"><img src="img/50.png"></div>
+          <div class="box__inner"><img src="img/49.jpg"></div>
+          <div class="box__inner"><img src="img/48.jpg"></div>
+          <div class="box__inner"><img src="img/47.jpg"></div>
+          <div class="box__inner"><img src="img/46.jpg"></div>
+          <div class="box__inner"><img src="img/45.jpg"></div>
+          <div class="box__inner"><img src="img/44.jpg"></div>
+          <div class="box__inner"><img src="img/43.jpg"></div>
+          <div class="box__inner"><img src="img/42.jpg"></div>
+          <div class="box__inner"><img src="img/41.jpg"></div>
+          <div class="box__inner"><img src="img/40.jpg"></div>
+          <div class="box__inner"><img src="img/39.jpg"></div>
+          <div class="box__inner"><img src="img/37.jpg"></div>
+          <div class="box__inner"><img src="img/36.jpg"></div>
+          <div class="box__inner"><img src="img/35.jpg"></div>
+          <div class="box__inner"><img src="img/34.jpg"></div>
+          <div class="box__inner"><img src="img/33.jpg"></div>
+    
+          
+          
+        </div>
+      </div>
+      <div class="scroll-container" data-speed="80" data-direction="rtl">
+        <div class="wrapper">
+          <div class="box__inner"><img src="img/32.jpg"></div>
+          <div class="box__inner"><img src="img/31.jpg"></div>
+          <div class="box__inner"><img src="img/30.jpg"></div>
+          <div class="box__inner"><img src="img/29.png"></div>
+          <div class="box__inner"><img src="img/28.jpg"></div>
+          <div class="box__inner"><img src="img/27.jpg"></div>
+          <div class="box__inner"><img src="img/26.jpg"></div>
+          <div class="box__inner"><img src="img/25.jpg"></div>
+          <div class="box__inner"><img src="img/24.jpg"></div>
+          <div class="box__inner"><img src="img/23.jpg"></div>
+          <div class="box__inner"><img src="img/22.jpg"></div>
+          <div class="box__inner"><img src="img/21.jpg"></div>
+          <div class="box__inner"><img src="img/20.png"></div>
+          <div class="box__inner"><img src="img/19.png"></div>
+          <div class="box__inner"><img src="img/18.jpg"></div>
+        </div>
+      </div>
+      <div class="scroll-container" data-speed="90" data-direction="ltr">
+        <div class="wrapper">
+          <div class="box__inner"><img src="img/17.jpg"></div>
+          <div class="box__inner"><img src="img/16.jpg"></div>
+          <div class="box__inner"><img src="img/15.jpg"></div>
+          <div class="box__inner"><img src="img/14.jpg"></div>
+          <div class="box__inner"><img src="img/13.jpg"></div>
+          <div class="box__inner"><img src="img/12.jpg"></div>
+          <div class="box__inner"><img src="img/11.jpg"></div>
+          <div class="box__inner"><img src="img/10.png"></div>
+          <div class="box__inner"><img src="img/9.jpg"></div>
+          <div class="box__inner"><img src="img/8.jpg"></div>
+          <div class="box__inner"><img src="img/7.png"></div>
+          <div class="box__inner"><img src="img/6.jpg"></div>
+          <div class="box__inner"><img src="img/5.jpg"></div>
+          <div class="box__inner"><img src="img/4.jpg"></div>
+          <div class="box__inner"><img src="img/3.jpg"></div>
+          <div class="box__inner"><img src="img/2.jpg"></div>
+          <div class="box__inner"><img src="img/1.jpg"></div>
+    
+        
+        </div>
+      </div>
+    </div>
+
+
+  
+    <div class="wrap">
+      
+        <div class="text text1">
+          <h1>I migliori album di tutti i tempi</h1>
+          
+        </div>  
+        <div class="text text2">
+          <h2>Scopri la raccolta più completa di sempre </h2>
+    
+    
+        </div> 
+    
+      
+    </div>
+        
+      
+    
+    <div class="slide">
+    <div class="counter">50</div>
+    <div class="items" id="gallery" tabindex="0">
+      
+      <div class="items__track" id="track">
+        <div class="item item01">
+          <h1 class="title"></h1>
+          
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/1.jpg"alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/2.jpg"alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/3.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/4.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/5.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/6.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/7.png" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/8.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/9.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/10.png" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/11.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/12.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/13.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/14.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/15.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/16.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/17.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/18.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/19.png" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/20.png" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/21.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/22.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/23.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/24.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/25.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/26.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/27.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/28.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/29.png" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/30.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/31.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/32.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/33.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/34.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/35.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/36.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/37.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/38.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/39.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/40.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/41.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/42.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/43.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/44.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/45.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/46.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/47.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/48.jpg" alt="">
+        </div>
+        <div class="item item01">
+          <h1 class="title"></h1>
+          <img src="img/49.jpg" alt="">
+        </div>
+        <div class="item item01">
+          
+            <h1 class="title"></h1>
+            <img src="img/50.png" alt="">
+          
+        </div>
+
+        
+      </div>
+    </div>
+    </div>
+    
+    <div class="catalogo">
+        
+        <div class="catalogo__item">
+          <div class="counter_elenco">50</div>
+          <img src="img/50.png" alt="">
+          <div class="descrizione">
+            <h1>The Blueprint</h1>
+            <h2>JAY-Z</h2>
+          </div>
+          
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">49</div>
+          <img src="img/49.jpg" alt="">
+          <div class="descrizione">
+            <h1>Aquemini</h1>
+            <h2>OutKast</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">48</div>
+          <img src="img/48.jpg" alt="">
+          <div class="descrizione">
+            <h1>Legend</h1>
+            <h2>Bob Marley and the Wailers </h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">47</div>
+          <img src="img/47.jpg" alt="">
+          <div class="descrizione">
+            <h1>Ramones</h1>
+            <h2>Ramones</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">46</div>
+          <img src="img/46.jpg" alt="">
+          <div class="descrizione">
+            <h1>Graceland</h1>
+            <h2>Paul Simon</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">45</div>
+          <img src="img/45.jpg" alt="">
+          <div class="descrizione">
+            <h1>Sign O’ the Times</h1>
+            <h2>Prince</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">44</div>
+          <img src="img/44.jpg" alt="">
+          <div class="descrizione">
+            <h1>Illmatic</h1>
+            <h2>Nas</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">43</div>
+          <img src="img/43.jpg" alt="">
+          <div class="descrizione">
+            <h1>The Low End Theory</h1>
+            <h2>A Tribe Called Quest</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">42</div>
+          <img src="img/42.jpg" alt="">
+          <div class="descrizione">
+            <h1>OK Computer</h1>
+            <h2>Radiohead</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">41</div>
+          <img src="img/41.jpg" alt="">
+          <div class="descrizione">
+            <h1>Let It Bleed</h1>
+            <h2>The Rolling Stones</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">40</div>
+          <img src="img/40.jpg" alt="">
+          <div class="descrizione">
+            <h1>The Rise and Fall of Ziggy Stardust</h1>
+            <h2>David Bowie</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">39</div>
+          <img src="img/39.jpg" alt="">
+          <div class="descrizione">
+            <h1>Remain in Light</h1>
+            <h2>Talking Heads</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">38</div>
+          <img src="img/38.jpg" alt="">
+          <div class="descrizione">
+            <h1>Blonde on Blonde</h1>
+            <h2>Bob Dylan</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">37</div>
+          <img src="img/37.jpg" alt="">
+          <div class="descrizione">
+            <h1>The Chronic</h1>
+            <h2>Dr. Dre</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">36</div>
+          <img src="img/36.jpg" alt="">
+          <div class="descrizione">
+            <h1>Off the Wall</h1>
+            <h2>Michael Jackson</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">35</div>
+          <img src="img/35.jpg" alt="">
+          <div class="descrizione">
+            <h1>Rubber Soul</h1>
+            <h2>The Beatles</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">34</div>
+          <img src="img/34.jpg" alt="">
+          <div class="descrizione">
+            <h1>Innervisions</h1>
+            <h2>Stevie Wonder</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">33</div>
+          <img src="img/33.jpg" alt="">
+          <div class="descrizione">
+            <h1>Back to Black</h1>
+            <h2>Amy Winehouse</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">32</div>
+          <img src="img/32.jpg" alt="">
+          <div class="descrizione">
+            <h1>Lemonade</h1>
+            <h2>Beyoncé</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">31</div>
+          <img src="img/31.jpg" alt="">
+          <div class="descrizione">
+            <h1>Kind of Blue</h1>
+            <h2>Miles Davis</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">30</div>
+          <img src="img/30.jpg" alt="">
+          <div class="descrizione">
+            <h1>Are You Experienced</h1>
+            <h2>Jimi Hendrix</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">29</div>
+          <img src="img/29.png" alt="">
+          <div class="descrizione">
+            <h1>White Album</h1>
+            <h2>The Beatles</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">28</div>
+          <img src="img/28.jpg" alt="">
+          <div class="descrizione">
+            <h1>Voodoo</h1>
+            <h2>D’Angelo</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">27</div>
+          <img src="img/27.jpg" alt="">
+          <div class="descrizione">
+            <h1>Enter the Wu-Tang</h1>
+            <h2>Wu-Tang Clan</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">26</div>
+          <img src="img/26.jpg" alt="">
+          <div class="descrizione">
+            <h1>Horses</h1>
+            <h2>Patti Smith</h2>
+          </div>
+          </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">25</div>
+          <img src="img/25.jpg" alt="">
+          <div class="descrizione">
+            <h1>Tapestry</h1>
+            <h2>Carole King</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">24</div>
+          <img src="img/24.jpg" alt="">
+          <div class="descrizione">
+            <h2>The Beatles: Sgt. Pepper’s Lonely Hearts Club Band</h2>
+            
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">23</div>
+          <img src="img/23.jpg" alt="">
+          <div class="descrizione">
+            <h1>The Velvet Underground and Nico</h1>
+            <h2>The Velvet Underground</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">22</div>
+          <img src="img/22.jpg" alt="">
+          <div class="descrizione">
+            <h1>Ready to Die</h1>
+            <h2>The Notorious B.I.G.</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">21</div>
+          <img src="img/21.jpg" alt="">
+          <div class="descrizione">
+            <h1>Born to Run</h1>
+            <h2>Bruce Springsteen</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">20</div>
+          <img src="img/20.png" alt="">
+          <div class="descrizione">
+            <h1>Kid A</h1>
+            <h2>Radiohead</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">19</div>
+          <img src="img/19.png" alt="">
+          <div class="descrizione">
+            <h1>To Pimp a Butterfly</h1>
+            <h2>Kendrick Lamar</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">18</div>
+          <img src="img/18.jpg" alt="">
+          <div class="descrizione">
+            <h1>Highway 61 Revisited</h1>
+            <h2>Bob Dylan</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">17</div>
+          <img src="img/17.jpg" alt="">
+          <div class="descrizione">
+            <h1>My Beautiful Dark Twisted Fantasy</h1>
+            <h2>Kanye West</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">16</div>
+          <img src="img/16.jpg" alt="">
+          <div class="descrizione">
+            <h1>London Calling</h1>
+            <h2>The Clash</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">15</div>
+          <img src="img/15.jpg" alt="">
+          <div class="descrizione">
+            <h1>It Takes a Nation of Millions to Hold Us Back</h1>
+            <h2>Public Enemy</h2>
+          </div>
+        </div> 
+        <div class="catalogo__item">
+          <div class="counter_elenco">14</div>
+          <img src="img/14.jpg" alt="">
+          <div class="descrizione">
+            <h1>Exile on Main Street</h1>
+            <h2>The Rolling Stones</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">13</div>
+          <img src="img/13.jpg" alt="">
+          <div class="descrizione">
+            <h1>I Never Loved a Man the Way I Love You</h1>
+            <h2>Aretha Franklin</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">12</div>
+          <img src="img/12.jpg" alt="">
+          <div class="descrizione">
+            <h1>Thriller</h1>
+            <h2>Michael Jackson</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">11</div>
+          <img src="img/11.jpg" alt="">
+          <div class="descrizione">
+            <h1>Revolver</h1>
+            <h2>The Beatles</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">10</div>
+          <img src="img/10.png" alt="">
+          <div class="descrizione">
+            <h1>The Miseducation of Lauryn Hill</h1>
+            <h2> Lauryn Hill </h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">9</div>
+          <img src="img/9.jpg" alt="">
+          <div class="descrizione">
+            <h1>Blood on the Tracks</h1>
+            <h2>Bob Dylan</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">8</div>
+          <img src="img/8.jpg" alt="">
+          <div class="descrizione">
+            <h1>Purple Rain</h1>
+            <h2>Prince and the Revolution </h2>
+          </div>
+        </div> 
+        <div class="catalogo__item">
+          <div class="counter_elenco">7</div>
+          <img src="img/7.png" alt="">
+          <div class="descrizione">
+            <h1>Rumours</h1>
+            <h2>Fleetwood Mac</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">6</div>
+          <img src="img/6.jpg" alt="">
+          <div class="descrizione">
+            <h1>Nevermind</h1>
+            <h2>Nirvana</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">5</div>
+          <img src="img/5.jpg" alt="">
+          <div class="descrizione">
+            <h1>Abbey Road</h1>
+            <h2>The Beatles</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">4</div>
+          <img src="img/4.jpg" alt="">
+          <div class="descrizione">
+            <h1>Songs in the Key of Life</h1>
+            <h2>Stevie Wonder</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">3</div>
+          <img src="img/3.jpg" alt="">
+          <div class="descrizione">
+            <h1>Blue</h1>
+            <h2>Joni Mitchell</h2>
+          </div>
+        </div>
+        <div class="catalogo__item">
+          <div class="counter_elenco">2</div>
+          <img src="img/2.jpg" alt="">
+          <div class="descrizione">
+            <h1>Pet Sounds</h1>
+            <h2>The Beach Boys</h2>
+          </div>
+        </div> 
+        <div class="catalogo__item">
+          <div class="counter_elenco">1</div>
+          <img src="img/1.jpg" alt="">
+          <div class="descrizione">
+            <h1>What’s Going On’</h1>
+            <h2>Marvin Gaye</h2>
+          </div>
+        </div>
+    </div>
+     
+        
+     
+  </div>
+    
+
+  
+  
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<!-- SplitText è un plugin Club GreenSock; per demo si usa l'asset ufficiale CodePen -->
+<script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+
+
+<script src="script.js"></script>
+  
+</body>
+</html>

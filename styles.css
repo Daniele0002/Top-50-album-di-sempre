@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{overflow-y: scroll; overflow-x: hidden; }
+body{overflow-y: auto; overflow-x: hidden;}
+:root{
+  --bg: rgb(0, 0, 0);
+  --text:#EDEFF3;
+  
+}
+body{
+  height: auto;
+  overflow-y: auto;
+  max-width: auto;
+  max-height: 1900vh;
+  color:var(--text); 
+  background-color: var(--bg);
+  font-family: "Montserrat", sans-serif;
+  overflow-y: hidden;
+}
+
+header{
+  
+  
+  width: 100%;
+  position: fixed;
+  margin-top: -100px;
+  height: 40px;
+  z-index: 3000;
+  
+}
+.menu1{
+  
+  width: 100%;
+  
+
+}
+.blur{
+  width: 140%;
+  height: 20px;
+  margin-top: -8px;
+  background-color: black;
+  filter: blur(5px);
+  margin-left: -20px;
+}
+
+
+.logo img{
+  width: 50px;
+  margin-left: 20px;
+  
+
+  
+}
+.menu1__inner{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  z-index: 3001;
+}
+
+button{
+  width: 25px;
+  height: 25px;
+  background-color: none;
+  fill: lightgray;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 2px;
+  z-index: 999;
+}
+button:hover{
+  background-color: white;
+  fill: black;
+}
+button-click{
+  background-color: white;
+  fill: black;
+}
+.menu{
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.menu ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.menu ul li{
+  list-style: none;
+  margin: 20px;
+  cursor: pointer;
+  
+}
+.menu ul li a{
+  text-decoration: none;
+  color: var(--text);
+}
+
+
+
+.vetrina{
+  margin-top: 100px;
+}
+
+
+.scroll-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  white-space: nowrap;
+  
+}
+
+.wrapper {
+  display: inline-flex;
+  flex-shrink: 0;
+  will-change: transform;
+}
+
+.box__inner {
+  flex: 0 0 auto;
+  padding: 10px;
+}
+
+.box__inner img {
+  display: block;
+  width: 200px;        
+  height: auto;
+  border-radius: 8px;  
+}
+
+
+.scrolling {
+  animation: marquee var(--dur, 20s) linear infinite;
+}
+
+
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Direzione: se il container dichiara rtl, inverti la direzione dell’animazione */
+.scroll-container[data-direction="rtl"] .wrapper.scrolling {
+  animation-direction: reverse;
+}
+
+.wrap {
+  
+  
+  height: 400px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+  padding: 50px;
+  padding-top: 20px;
+}
+
+
+.sp {
+  text-align: center;
+  margin-top: 1rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  opacity: 0.8;
+  font-size: 1.5rem;
+}
+
+.text {
+  
+  
+ 
+  text-align: center;
+  overflow: hidden;
+  
+}
+.text1{
+  font-size: 25px;
+  color: #f3dd13;
+  
+}
+.text2{
+  margin-top: 100px;
+  color: white;
+}
+
+.text3{
+  margin-top: 200px;
+
+}
+
+.split-line {
+  overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.counter{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f3dd13;
+  font-size: 65px;
+  font-weight: bold;
+  z-index: 999;
+  line-height: 1;
+  margin-bottom: -5vh;
+
+  pointer-events: none;
+}
+.slide{
+  width: 100%;
+  height: 30%;
+  
+}
+.no-scroll {
+  overflow: hidden !important;
+}
+
+.items{
+  
+  height:80vh; width:100%; overflow:hidden;  
+  transform: matrix(1.5,-0.3,0,1.3,420,0);
+  position: relative;
+  z-index: 100;
+  margin-top: 5vh;
+  padding: 20vh;
+  
+
+  
+}
+
+/* Garantisce che i pulsanti siano cliccabili sopra la track */
+header, .menu1, .menu1__inner, .menu1__inner button { pointer-events: auto; }
+.items__track{
+  height:80%; display:flex; will-change:transform; 
+  margin-left: 240px;
+  padding: 10vh;
+}
+.item{
+  flex:0 0 50vw; height:35vh; position:relative; 
+  cursor: pointer;
+  margin-top: 150px;
+  transform: matrix(1.5,0.8,0,1.2,100,0);
+
+  
+  
+  
+}
+
+
+.item::before{content:""; position:absolute; inset:0;}
+.item >  img{width: 20%; height: 80%; border-radius:5px; display:block; margin-top: 100px; margin-top: 2vh; }
+
+
+
+.catalogo{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+  flex-direction: column;
+  
+  
+}
+
+.catalogo__item{
+  width: 100%;
+  height: 200px;
+  padding-left: 200px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  
+  
+  
+}
+
+.counter_elenco{
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f3dd13;
+  font-size: 60px;
+  font-weight: bolder;
+  
+  
+}
+.catalogo__item > img{
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  margin-left: 0px;
+  
+}
+.catalogo__item > .descrizione{
+  
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: bolder;
+  margin-left: 40px;
+  
+  
+}
+.catalogo__item > .descrizione > h1{
+  padding-bottom: 10px;
+}
