@@ -243,3 +243,87 @@ button2.addEventListener('click', () => {
  
 });
 
+const googleUrl = 'https://www.google.it/search?q=';
+
+const albumSearchQueries = [
+  null,
+  "What's Going On Marvin Gaye",
+  "Pet Sounds The Beach Boys",
+  "Blue Joni Mitchell",
+  "Songs in the Key of Life Stevie Wonder",
+  "Abbey Road The Beatles",
+  "Nevermind Nirvana",
+  "Rumours Fleetwood Mac",
+  "Purple Rain Prince and the Revolution",
+  "Blood on the Tracks Bob Dylan",
+  "The Miseducation of Lauryn Hill",
+  "Revolver The Beatles",
+  "Thriller Michael Jackson",
+  "I Never Loved a Man the Way I Love You Aretha Franklin",
+  "Exile on Main Street Rolling Stones",
+  "It Takes a Nation of Millions to Hold Us Back Public Enemy",
+  "London Calling The Clash",
+  "My Beautiful Dark Twisted Fantasy Kanye West",
+  "Highway 61 Revisited Bob Dylan",
+  "To Pimp a Butterfly Kendrick Lamar",
+  "Kid A Radiohead",
+  "Born to Run Bruce Springsteen",
+  "Ready to Die Notorious BIG",
+  "The Velvet Underground and Nico",
+  "Sgt Pepper Lonely Hearts Club Band Beatles",
+  "Tapestry Carole King",
+  "Horses Patti Smith",
+  "Enter the Wu Tang Wu Tang Clan",
+  "Voodoo D'Angelo",
+  "White Album Beatles",
+  "Are You Experienced Jimi Hendrix",
+  "Kind of Blue Miles Davis",
+  "Lemonade Beyonce",
+  "Back to Black Amy Winehouse",
+  "Innervisions Stevie Wonder",
+  "Rubber Soul Beatles",
+  "Off the Wall Michael Jackson",
+  "The Chronic Dr Dre",
+  "Blonde on Blonde Bob Dylan",
+  "Remain in Light Talking Heads",
+  "Ziggy Stardust David Bowie",
+  "Let It Bleed Rolling Stones",
+  "OK Computer Radiohead",
+  "The Low End Theory A Tribe Called Quest",
+  "Illmatic Nas",
+  "Sign O the Times Prince",
+  "Graceland Paul Simon",
+  "Ramones Ramones",
+  "Legend Bob Marley",
+  "Aquemini Outkast",
+  "The Blueprint Jay Z"
+];
+
+const clickableItems = document.querySelectorAll('.items .item');
+
+clickableItems.forEach((item, i) => {
+  const index= i; // perché il primo è null
+  const query = albumSearchQueries[index];
+  if (!query) return;
+
+  item.style.cursor = 'pointer';
+  item.addEventListener('click', () => {
+    const url = `${googleUrl}${encodeURIComponent(query)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
+});
+
+
+const clickableCatalogoItems = document.querySelectorAll('.catalogo .catalogo__item');
+
+clickableCatalogoItems.forEach((item, i) => {
+  const reverseIndex = albumSearchQueries.length - 1 - i;
+  const query = albumSearchQueries[reverseIndex];
+  if (!query) return;
+
+  item.style.cursor = 'pointer';
+  item.addEventListener('click', () => {
+    const url = `${googleUrl}${encodeURIComponent(query)}`;
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
+});
